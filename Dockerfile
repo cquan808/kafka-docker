@@ -1,5 +1,5 @@
 FROM ubuntu:17.04
-MAINTAINER Chris Q
+MAINTAINER Chris
 
 # Update repository source list
 RUN apt-get update
@@ -8,7 +8,6 @@ RUN apt-get update
 RUN apt-get install -y zookeeper
 
 # verification of image
-
 
 # clear cache and delete folders with unnecessary files
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
